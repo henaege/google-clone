@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Clone</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body {
+                margin: 0px;
+            }
+            #google-wrapper {
+                position: relative;
+                height: 100vh;
+            }
+            #header {
+                text-align: right;
+
+            }
+            .menu-item {
+                color: #3A3A3A;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 15px;
+                margin-top: 15px;
+            }
+            .main-body {
+                text-align: center;
+                margin-top: 150px;
+            }
+            .body img {
+                max-width: 100%;
+            }
+            #footer {
+                position: absolute;
+                width: 100%;
+                bottom: 0px;
+                left: 0px;
+            }
+            
+            .search-bar input {
+                width: 490px;
+                height:50px;
+                border-style: outset;
+                margin-top: 40;
+            }
+            .search-bar img {
+                position: absolute;
+                top: 315;
+                left: 764;
+                display: inline-block
+            }
+            .button {
+                border: none;
+                color: #757575;
+                padding: 10px;
+                text-align: center;
+                background-color: #F2F2F2;
+                margin-top: 30px;
+                margin-right: 5px;
+                display: inline-block;
+                height: 40px;
+                width: 125px;
+                font-size: .75em;
+                font-weight: bolder;
+            
+            }
+            .button:hover {
+                border: 1px solid black;
+                color: black;
+            }
+            .footer {
+                display: block;
+                bottom: 0;
+                font-size: 10pt;
+                height: 35px;
+                position: absolute;
+                width: 100%;
+                background: #f2f2f2;
+                border-top: 1px solid #e4e4e4;
+                min-width: 980px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #666666;
+                margin: 0 auto;
+            }
+            #footer-right {
+                margin-right: 30px;
+                float: right;
+                white-space: nowrap;
+                font-size: small;
+                /*line-height: 40px;*/
+            }
+            #footer-right p{
+                display: inline-block;
+                margin-right: 30px;
+            }
+            #footer-left {
+                margin-left: 30px;
+                float: left;
+                white-space: nowrap;
+                font-size: small;
+                /*line-height: 40px;*/
+            }
+            #footer-left p {
+                display: inline-block;
+                margin-left: 30px;
+            }
+            #mic {
+                position: absolute;
+                top: 340px;
+                left: 725px;
+            }
+            .searchform {
+                margin-top: 25px;
+                height: 47px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--The overall wrapper for our google clone page. Everything will be insdie this (probably)-->
+        <div id="google-wrapper">
+            <div id="header">
+                <div class="menu-item">Gmail</div>
+                <div class="menu-item">Images</div>
+                <div class="menu-item">
+                    <img src="googmenu.png">
+                </div>
+                <div class="menu-item">
+                    <img src="alert.png">
+                </div>
+                <div class="menu-item">
+                    <img src="avatar.png">
+                </div>
+            </div>
+            <img id="mic" src="mic.png">
+            <div class="main-body">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                <div class="search-bar">
+                    <form action="http://www.google.com/search" class="searchform" method="get" name="searchform">
+<input autocomplete="on" class="form-controls search" name="q" required="required"  type="text">
+</form>
+                    
+                </div>
+                    <input class="button" type="button" value="Google Search"/>
+                    <input class="button" type="button"value="I'm Feeling Lucky"/>
+            </div>
+            <div class="footer">
+                <span id="footer-right">
+                    <p>Privacy</p>
+                    <p>Terms</p>
+                    <p>Settings</p>
+                </span>
+                <span id="footer-left">
+                    <p>Advertising</p>
+                    <p>Business</p>
+                    <p>About</p>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
